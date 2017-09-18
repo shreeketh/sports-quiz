@@ -1,0 +1,35 @@
+<header class="header bg-primary">
+
+  <div class="title">Welcome to sports Quiz</div>
+  <div class="clearfix"></div>
+</header>
+<div class="content">
+  <div class="container-fluid">
+    <form #myForm="ngForm" (submit)="addTodo()" novalidate>
+      <div [ngClass]="{'col-md-6': questionClass, 'col-md-12': !questionClass}"> 
+        <div *ngFor="let item of questionData.sports; index as i">
+          <div [ngClass]="{'col-md-12': questionClass, 'col-md-6': !questionClass}">
+            <div id="result" class="quiz-body well">
+              <h4><span *ngIf='validated'><img *ngIf='answers[i]==item.answer' class="img-class pull-right" src="../assets/images/correct.png"/>
+                  <img *ngIf='answers[i]!=item.answer' class="img-class pull-right" src="../assets/images/wrong.png"/>
+                </span><span id="qid">{{i+1}}.</span> <span id="question">{{item.question}}</span></h4>
+              <div class="option-block-container" id="question-options">
+                <select class="form-control" [(ngModel)]='answers[i]' [ngModelOptions]="{standalone: true}" required (change)='answerSelected()'
+                  [disabled]="validated">
+                      <option *ngFor="let option of item.options" value={{option}} [selected]='option==answers[i]'>{{option}}</option>
+                  </select>
+              </div>
+              <div *ngIf='validated' class='answer-section'><span classs="correct-answer">Correct Answer:</span>{{item.answer}} </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-md-6" [hidden]="!questionClass">
+        <app-graph-component [graphData]='statistics'></app-graph-component>
+      </div>
+      <div class="col-md-12 button-div"><button type="submit" class="btn btn-primary" [disabled]="disableBtn||validated">Submit</button>
+        <input type="button" class="btn btn-primary" value='Reset' (click)='resetValues()' [disabled]="validated"></div>
+    </form>
+  </div>
+</div>

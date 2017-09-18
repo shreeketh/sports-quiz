@@ -1,0 +1,27 @@
+.content { margin-top:54px; }
+.quiz-body { margin-top:15px; padding-bottom:50px; }
+.option-block-container { margin-top:20px;}
+.option-block { padding:10px; background:aliceblue; border:1px solid #84c5fe; margin-bottom:10px; cursor:pointer; }
+.result-question { font-weight:bold; }
+
+
+.res-header { border-bottom:1px solid #ccc; margin-bottom:15px; padding-bottom:15px; }
+
+.answer-section{
+    position: absolute;
+    bottom: 30px;
+}
+
+.img-class{
+    height: 25px;
+    width: 30px;
+}
+
+.correct-answer{
+    color: cadetblue;
+    font-weight: 600;
+}
+
+.button-div{
+    text-align: center;
+}

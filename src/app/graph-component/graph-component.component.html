@@ -1,0 +1,10 @@
+
+ <div style="display: block" class="col-md-12 box-border">
+  <canvas baseChart
+              [data]="graphData"
+              [labels]="doughnutChartLabels"
+              [chartType]="doughnutChartType"
+    ></canvas>
+</div>
+<b>Correct Answers:</b>{{graphData[1]}}<br/>
+<b>Wrong Answers:</b>{{graphData[0]}}
