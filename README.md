@@ -11,8 +11,11 @@ Feel free to reach me in case of any queries: shreeketh@gmail.com
 
 # Technology Stack
 Angular 4
+
 HTML 5
+
 CSS 3
+
 Chart.js
 
 # YOU CAN DO WHATEVER YOU WANT WITH THIS CODE :)
