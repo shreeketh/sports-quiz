@@ -1,28 +1,21 @@
 # SportsQuiz
- sreeketh
+Here, I have hardcoded few sports related questions. In the UI I'll let user to select answer, on submission correct answer will be shown with right mark and wrong answer will be marked with X mark.
+
+Only once user can submit their answers and after submission a graph will be shown using Chart.js.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.6.
 
-## Development server
+This code is deployed here: http://issani.co.in/angular/for-review/
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Feel free to reach me in case of any queries: shreeketh@gmail.com
 
-## Code scaffolding
+# Technology Stack
+Angular 4
+HTML 5
+CSS 3
+Chart.js
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
+# YOU CAN DO WHATEVER YOU WANT WITH THIS CODE :)
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+KEEP CODING..!
+-Shreeketh
